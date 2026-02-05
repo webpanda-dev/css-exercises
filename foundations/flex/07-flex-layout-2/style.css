@@ -3,11 +3,20 @@ body {
   margin: 0;
   min-height: 100vh;
 }
-
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  padding: 20px;
 }
 
 .footer {
@@ -15,12 +24,44 @@ body {
   background: #eee;
   color: darkmagenta;
 }
-
+.container{
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+.cardContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /* align-items: center; */
+  gap: 40px;
+  margin: 40px;
+}
+.card{
+  max-width: 18vw;
+  max-height: 80vh;
+  text-align: center;
+  padding: 20px;
+}
 .sidebar {
   width: 300px;
   background: royalblue;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
+  height: 90vh;
+  
 }
+.sidebar ul{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  list-style: none;
+}
+.sidebar ul li a {
+  text-decoration: none;
+  color: rgb(243, 243, 243);
+  font-size: 18px;
+  
+} 
 
 .card {
   border: 1px solid #eee;
